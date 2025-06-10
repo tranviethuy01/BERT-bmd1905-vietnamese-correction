@@ -2,259 +2,221 @@ import logging
 import random
 import re
 from string import ascii_letters
-
+from typing import Dict, List
 import unidecode
 
 from config.config import AugmentationConfig, CharacterMaps
 
-
 class TextAugmenter:
-    """Class for text augmentation operations.
+    """Class for text augmentation operations with Vietnamese support."""
 
-    This class provides various methods to augment text data by applying
-    different transformations such as character case swapping, character
-    deletion, insertion, replacement, and accent modification. The
-    transformations are probabilistic and configurable through the
-    AugmentationConfig class.
+    VIETNAMESE_CHAR_MAPPING: Dict[str, List[str]] = {
+        'a': ['á', 'à', 'ả', 'ã', 'ạ', 'â', 'ấ', 'ầ', 'ẩ', 'ẫ', 'ậ', 'ă', 'ắ', 'ằ', 'ẳ', 'ẵ', 'ặ'],
+        'd': ['đ'],
+        'e': ['é', 'è', 'ẻ', 'ẽ', 'ẹ', 'ê', 'ế', 'ề', 'ể', 'ễ', 'ệ'],
+        'i': ['í', 'ì', 'ỉ', 'ĩ', 'ị'],
+        'o': ['ó', 'ò', 'ỏ', 'õ', 'ọ', 'ô', 'ố', 'ồ', 'ổ', 'ỗ', 'ộ', 'ơ', 'ớ', 'ờ', 'ở', 'ỡ', 'ợ'],
+        'u': ['ú', 'ù', 'ủ', 'ũ', 'ụ', 'ư', 'ứ', 'ừ', 'ử', 'ữ', 'ự'],
+        'y': ['ý', 'ỳ', 'ỷ', 'ỹ', 'ỵ'],
+    }
 
-    Attributes:
-        config (AugmentationConfig): Configuration object containing
-            parameters for augmentation techniques.
-        char_maps (CharacterMaps): Object containing character mapping
-            information for accent modifications.
-        clean_punctuation (Pattern): Compiled regex pattern for cleaning
-            punctuation from text.
-    """
+    COMMON_TYPO_PAIRS = [
+        ('tr', 'ch'), ('ch', 'tr'), ('d', 'gi'), ('gi', 'd'), ('r', 'd'),
+        ('s', 'x'), ('x', 's'), ('l', 'n'), ('n', 'l'), ('v', 'd'),
+        # Bổ sung các cặp phụ âm đầu phổ biến cho augment lỗi giọng vùng miền/ASR:
+        ('n', 'l'), ('l', 'n'), ('s', 'x'), ('x', 's'), ('tr', 'ch'), ('ch', 'tr'), 
+        ('d', 'gi'), ('gi', 'd'), ('r', 'd'), ('d', 'r'), ('t', 'c'), ('c', 't'), 
+        ('v', 'b'), ('b', 'v'),
+    ]
 
     def __init__(self, config: AugmentationConfig):
-        """Initialize the TextAugmenter with the given configuration.
-
-        Args:
-            config (AugmentationConfig): Configuration object for text
-                augmentation parameters.
-        """
         self.config = config
         self.char_maps = CharacterMaps()
         self.clean_punctuation = re.compile(r"(?<!\d)[.,;:'?!](?!\d)")
+        # Đảo ngược mapping để tra cứu nhanh
+        self.REVERSE_MAPPING = {}
+        for base, variants in self.VIETNAMESE_CHAR_MAPPING.items():
+            for var in variants:
+                self.REVERSE_MAPPING[var] = base
 
     def augment_text(self, text: str) -> str:
-        """Apply all augmentation techniques to the provided text.
-
-        This method applies a series of transformations to the input text
-        in a specific order. If any error occurs during the augmentation
-        process, it logs the error and returns the original text.
-
-        Args:
-            text (str): The input text to be augmented.
-
-        Returns:
-            str: The augmented text after applying all transformations.
-        """
+        logging.info(f"[augment_text] IN: {text}")
         try:
-            text = self.swap_characters_case(text)
-            text = self.delete_word(text)
-            text = self.delete_characters(text)
-            text = self.insert_characters(text)
-            text = self.replace_characters(text)
+            text = self.swap_vietnamese_typos(text)
+            text = self.swap_n_l(text)  # Thêm hoán đổi n <-> l
+            text = self.modify_vietnamese_tones(text)
+            # text = self.swap_characters_case(text)
+            text = self.delete_vietnamese_character(text)
+            text = self.insert_vietnamese_character(text)
+            text = self.replace_vietnamese_character(text)
             text = self.lower_case_words(text)
             text = self.remove_punctuation(text)
             text = self.remove_random_accent(text)
             text = self.replace_accent_chars(text)
+            logging.info(f"[augment_text] OUT: {text}")
             return text
         except Exception as e:
-            logging.error(f"Error during text augmentation: {e}")
+            logging.error(f"Lỗi khi biến đổi văn bản: {e}")
             return text
 
-    def delete_characters(self, text: str) -> str:
-        """Delete random characters from the input text.
+    def swap_vietnamese_typos(self, text: str) -> str:
+        logging.debug(f"[swap_vietnamese_typos] IN: {text}")
+        words = text.split()
+        for i in range(len(words)):
+            if random.random() < self.config.AUGMENTATION_PROBABILITY:
+                for orig, repl in self.COMMON_TYPO_PAIRS:
+                    if words[i].startswith(orig):
+                        words[i] = repl + words[i][len(orig):]
+                        break
+        out = ' '.join(words)
+        logging.debug(f"[swap_vietnamese_typos] OUT: {out}")
+        return out
 
-        This method removes characters from the text based on a
-        configurable probability. Digits are not removed.
-
-        Args:
-            text (str): The input text from which characters will be deleted.
-
-        Returns:
-            str: The modified text with random characters deleted.
+    def swap_n_l(self, text: str) -> str:
         """
-        return "".join(
-            c
-            for c in text
-            if random.random() > self.config.CHAR_DELETE_PERCENTAGE or c.isdigit()
-        )
-
-    def insert_characters(self, text: str) -> str:
-        """Insert random characters into the input text.
-
-        This method inserts random ASCII letters into the text based on
-        a configurable probability. Digits are not affected.
-
-        Args:
-            text (str): The input text into which characters will be inserted.
-
-        Returns:
-            str: The modified text with random characters inserted.
+        Hoán đổi phụ âm đầu 'n' <-> 'l' trong các từ với xác suất nhất định.
         """
-        modified_line = []
-        for char in text:
-            if (
-                random.random() <= self.config.AUGMENTATION_PROBABILITY
-                and not char.isdigit()
-            ):
-                modified_line.append(random.choice(ascii_letters))
-            modified_line.append(char)
-        return "".join(modified_line)
+        logging.debug(f"[swap_n_l] IN: {text}")
+        words = text.split()
+        for i, word in enumerate(words):
+            if word and (word[0].lower() == 'n' or word[0].lower() == 'l'):
+                if random.random() < getattr(self.config, "NL_SWAP_PROBABILITY", 0.1):
+                    if word[0] == 'n':
+                        words[i] = 'l' + word[1:]
+                    elif word[0] == 'N':
+                        words[i] = 'L' + word[1:]
+                    elif word[0] == 'l':
+                        words[i] = 'n' + word[1:]
+                    elif word[0] == 'L':
+                        words[i] = 'N' + word[1:]
+        out = ' '.join(words)
+        logging.debug(f"[swap_n_l] OUT: {out}")
+        return out
 
-    def replace_characters(self, text: str) -> str:
-        """Replace characters in the input text with random ASCII letters.
+    def modify_vietnamese_tones(self, text: str) -> str:
+        logging.debug(f"[modify_vietnamese_tones] IN: {text}")
+        chars = list(text)
+        for i in range(len(chars)):
+            if random.random() < self.config.AUGMENTATION_PROBABILITY:
+                char = chars[i]
+                if char in self.REVERSE_MAPPING:
+                    base = self.REVERSE_MAPPING[char]
+                    variants = self.VIETNAMESE_CHAR_MAPPING.get(base, [])
+                    if variants:
+                        chars[i] = random.choice(variants)
+        out = ''.join(chars)
+        logging.debug(f"[modify_vietnamese_tones] OUT: {out}")
+        return out
 
-        This method replaces characters in the text based on a
-        configurable probability. Digits are not replaced.
+    def delete_vietnamese_character(self, text: str) -> str:
+        logging.debug(f"[delete_vietnamese_character] IN: {text}")
+        vowels = [c for c in text if c in self.REVERSE_MAPPING]
+        if not vowels or random.random() > self.config.CHAR_DELETE_PERCENTAGE:
+            logging.debug(f"[delete_vietnamese_character] OUT (no change): {text}")
+            return text
+        char_to_delete = random.choice(vowels)
+        out = text.replace(char_to_delete, '', 1)
+        logging.debug(f"[delete_vietnamese_character] OUT: {out}")
+        return out
 
-        Args:
-            text (str): The input text in which characters will be replaced.
+    def insert_vietnamese_character(self, text: str) -> str:
+        logging.debug(f"[insert_vietnamese_character] IN: {text}")
+        if random.random() > self.config.AUGMENTATION_PROBABILITY:
+            logging.debug(f"[insert_vietnamese_character] OUT (no change): {text}")
+            return text
+        insert_pos = random.randint(0, len(text))
+        base_char = random.choice(list(self.VIETNAMESE_CHAR_MAPPING.keys()))
+        variants = self.VIETNAMESE_CHAR_MAPPING.get(base_char, [base_char])
+        insert_char = random.choice(variants) if variants else base_char
+        out = text[:insert_pos] + insert_char + text[insert_pos:]
+        logging.debug(f"[insert_vietnamese_character] OUT: {out}")
+        return out
 
-        Returns:
-            str: The modified text with characters replaced by random ASCII letters.
-        """
-        return "".join(
-            random.choice(ascii_letters)
-            if random.random() <= self.config.AUGMENTATION_PROBABILITY
-            and not c.isdigit()
-            else c
-            for c in text
-        )
+    def replace_vietnamese_character(self, text: str) -> str:
+        logging.debug(f"[replace_vietnamese_character] IN: {text}")
+        chars = list(text)
+        for i in range(len(chars)):
+            if random.random() < self.config.AUGMENTATION_PROBABILITY:
+                char = chars[i]
+                if char in self.REVERSE_MAPPING:
+                    base = self.REVERSE_MAPPING[char]
+                    variants = self.VIETNAMESE_CHAR_MAPPING.get(base, [])
+                    alternatives = [v for v in variants if v != char]
+                    if alternatives:
+                        chars[i] = random.choice(alternatives)
+        out = ''.join(chars)
+        logging.debug(f"[replace_vietnamese_character] OUT: {out}")
+        return out
 
     def swap_characters_case(self, text: str) -> str:
-        """Swap the case of characters in the input text randomly.
-
-        This method changes uppercase characters to lowercase and vice versa
-        based on a configurable probability.
-
-        Args:
-            text (str): The input text in which character cases will be swapped.
-
-        Returns:
-            str: The modified text with character cases swapped.
-        """
-        return "".join(
-            c.swapcase()
-            if random.random() <= self.config.AUGMENTATION_PROBABILITY
-            else c
+        logging.debug(f"[swap_characters_case] IN: {text}")
+        out = "".join(
+            c.swapcase() if random.random() < self.config.AUGMENTATION_PROBABILITY/2 else c
             for c in text
         )
+        logging.debug(f"[swap_characters_case] OUT: {out}")
+        return out
 
     def lower_case_words(self, text: str) -> str:
-        """Convert the first letter of words to lowercase randomly.
-
-        This method changes the first letter of words to lowercase based
-        on a configurable probability.
-
-        Args:
-            text (str): The input text in which words will be modified.
-
-        Returns:
-            str: The modified text with words converted to lowercase.
-        """
-        return " ".join(
-            word.lower()
-            if word[0].isupper()
-            and random.random() <= self.config.LOWER_CASE_WORDS_PROBABILITY
-            else word
-            for word in text.split()
+        logging.debug(f"[lower_case_words] IN: {text}")
+        words = text.split()
+        out = " ".join(
+            word.lower() if word and word[0].isupper() and random.random() < self.config.LOWER_CASE_WORDS_PROBABILITY else word
+            for word in words
         )
+        logging.debug(f"[lower_case_words] OUT: {out}")
+        return out
 
     def remove_punctuation(self, text: str) -> str:
-        """Remove punctuation from the input text.
-
-        This method uses a compiled regex pattern to remove punctuation
-        characters from the text.
-
-        Args:
-            text (str): The input text from which punctuation will be removed.
-
-        Returns:
-            str: The modified text with punctuation removed.
-        """
-        return self.clean_punctuation.sub("", text)
+        logging.debug(f"[remove_punctuation] IN: {text}")
+        out = self.clean_punctuation.sub("", text)
+        logging.debug(f"[remove_punctuation] OUT: {out}")
+        return out
 
     def delete_word(self, text: str) -> str:
-        """Delete a random word from the input text.
-
-        This method removes a word from the text based on a configurable
-        probability, ensuring that at least two words remain.
-
-        Args:
-            text (str): The input text from which a word will be deleted.
-
-        Returns:
-            str: The modified text with a random word deleted, or the
-            original text if no deletion occurs.
-        """
+        logging.debug(f"[delete_word] IN: {text}")
         words = text.split()
         if len(words) >= 3 and random.random() < self.config.DELETE_WORD_PROBABILITY:
             words.pop(random.randint(0, len(words) - 1))
-            return " ".join(words)
+            out = " ".join(words)
+            logging.debug(f"[delete_word] OUT: {out}")
+            return out
+        logging.debug(f"[delete_word] OUT (no change): {text}")
         return text
 
     def replace_accent_chars(self, text: str) -> str:
-        """Replace accented characters in the input text.
-
-        This method replaces a randomly selected accented character in a
-        word with a different character from the same group based on a
-        configurable probability.
-
-        Args:
-            text (str): The input text in which accented characters will be replaced.
-
-        Returns:
-            str: The modified text with accented characters replaced.
-        """
+        logging.debug(f"[replace_accent_chars] IN: {text}")
         words = text.split()
         if random.random() < self.config.REPLACE_ACCENT_CHARS_RATIO and words:
             idx = random.randint(0, len(words) - 1)
             words[idx] = self._change_accent(words[idx])
-        return " ".join(words)
+        out = " ".join(words)
+        logging.debug(f"[replace_accent_chars] OUT: {out}")
+        return out
 
     def remove_random_accent(self, text: str) -> str:
-        """Remove accents from random words in the input text.
-
-        This method removes accents from a randomly selected word based
-        on a configurable probability.
-
-        Args:
-            text (str): The input text from which accents will be removed.
-
-        Returns:
-            str: The modified text with accents removed from random words.
-        """
+        logging.debug(f"[remove_random_accent] IN: {text}")
         words = text.split()
         if random.random() < self.config.REMOVE_RANDOM_ACCENT_RATIO and words:
             idx = random.randint(0, len(words) - 1)
             words[idx] = unidecode.unidecode(words[idx])
-        return " ".join(words)
+        out = " ".join(words)
+        logging.debug(f"[remove_random_accent] OUT: {out}")
+        return out
 
     def _change_accent(self, text: str) -> str:
-        """Change accents in the given text.
-
-        This helper method finds accented characters in the text and
-        replaces one of them with a different character from the same
-        group based on a random selection.
-
-        Args:
-            text (str): The input text in which accents will be changed.
-
-        Returns:
-            str: The modified text with accents changed, or the original
-            text if no changes are made.
-        """
+        logging.debug(f"[_change_accent] IN: {text}")
         match_chars = re.findall(self.char_maps.CHARS_REGEX, text)
         if not match_chars:
+            logging.debug(f"[_change_accent] OUT (no match): {text}")
             return text
-
         replace_char = random.choice(match_chars)
         base_char = unidecode.unidecode(replace_char)
-        if base_char in self.char_maps.SAME_CHARS:
-            insert_char = random.choice(self.char_maps.SAME_CHARS[base_char])
-            return text.replace(replace_char, insert_char, 1)
+        candidates = [c for c in self.char_maps.SAME_CHARS.get(base_char, []) if c != replace_char]
+        if candidates:
+            insert_char = random.choice(candidates)
+            out = text.replace(replace_char, insert_char, 1)
+            logging.debug(f"[_change_accent] OUT: {out}")
+            return out
+        logging.debug(f"[_change_accent] OUT (no change): {text}")
         return text

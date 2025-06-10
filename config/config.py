@@ -5,18 +5,17 @@ from typing import Dict, List
 @dataclass
 class AugmentationConfig:
     """Configuration for text augmentation parameters."""
-
-    AUGMENTATION_PROBABILITY: float = 0.01
-    CHAR_DELETE_PERCENTAGE: float = 0.01
-    LOWER_CASE_WORDS_PROBABILITY: float = 0.1
+    AUGMENTATION_PROBABILITY: float = 0.3
+    CHAR_DELETE_PERCENTAGE: float = 0.1
+    LOWER_CASE_WORDS_PROBABILITY: float = 0.2
     COMBINE_SENTENCES_PROBABILITY: float = 1
-    DELETE_WORD_PROBABILITY: float = 0.005
-    REPLACE_ACCENT_CHARS_RATIO: float = 0.02
-    REMOVE_RANDOM_ACCENT_RATIO: float = 0.1
-    BATCH_SIZE: int = 1_000
+    DELETE_WORD_PROBABILITY: float = 0.1
+    REPLACE_ACCENT_CHARS_RATIO: float = 0.15
+    REMOVE_RANDOM_ACCENT_RATIO: float = 0.15
+    NL_SWAP_PROBABILITY: float = 0.2
+    BATCH_SIZE: int = 1000
     MAX_LENGTH: int = 256
-    AUGMENTATIONS_PER_SAMPLE: int = 5
-
+    AUGMENTATIONS_PER_SAMPLE: int = 15  # hoặc 7 nếu muốn nhiều mẫu sai hơn
 
 @dataclass
 class CharacterMaps:
