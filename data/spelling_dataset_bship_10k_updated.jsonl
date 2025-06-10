@@ -10018,3 +10018,354 @@
 {"input": "tai xê báo kẹt xe hong đến được", "output": "Tài xế báo kẹt xe không đến được"}
 {"input": "ban uong toi lai co nhan tai sế nguoi quen hong?", "output": "Bạn Uống Tôi Lái có nhận tài xế người quen không?"}
 {"input": "tai se cua bẹn uong tôi lái rất dễ thương", "output": "Tài xế của Bạn Uống Tôi Lái rất dễ thương"}
+{"input": "tôi cần đạt xe ra sân bay gấp", "output": "tôi cần đặt xe ra sân bay gấp"}
+{"input": "bác tài ơi dúp tôi với hà ly nặng quá", "output": "bác tài ơi giúp tôi với hành lý nặng quá"}
+{"input": "cho hỏi bên mình có áp ko tôi muốn cài", "output": "cho hỏi bên mình có app không tôi muốn cài"}
+{"input": "chuyến xe hôm qua xế chạy ẩu gất nguy hiểm", "output": "chuyến xe hôm qua xế chạy ẩu rất nguy hiểm"}
+{"input": "tôi muốn huy chuyến đi vì bận việc đột suất", "output": "tôi muốn hủy chuyến đi vì bận việc đột xuất"}
+{"input": "bạn oto đón trễ 20 phút rồi làm sao đây", "output": "bạn ơi tô đón trễ 20 phút rồi làm sao đây"}
+{"input": "khoản cách từ nhà tui tới sân bay bảo nhiêu km", "output": "khoảng cách từ nhà tôi tới sân bay bao nhiêu km"}
+{"input": "thanh toán bằng thẻ tín zụng được ko bạn", "output": "thanh toán bằng thẻ tín dụng được không bạn"}
+{"input": "tôi bị mất đồ trên xe rồi liên hẹ sao đây", "output": "tôi bị mất đồ trên xe rồi liên hệ sao đây"}
+{"input": "báo giá chuyến đi quận 1 tân bình đi", "output": "bao giá chuyến đi quận 1 tân bình đi"}
+{"input": "xe có chổ cho 4 người và 3 va li không", "output": "xe có chỗ cho 4 người và 3 va li không"}
+{"input": "tài xế đánh vòng vòng hoài tui bị say xe", "output": "tài xế đánh vòng vòng hoài tôi bị say xe"}
+{"input": "tôi cần xe lúc 5h sáng mai có được hem", "output": "tôi cần xe lúc 5h sáng mai có được hông"}
+{"input": "cho tôi xin hóa đơn điện tứ với được ko", "output": "cho tôi xin hóa đơn điện tử với được không"}
+{"input": "tại sao phí cầu đường lại tăng thêm dzậy", "output": "tại sao phí cầu đường lại tăng thêm vậy"}
+{"input": "bạn tài ơi đón tôi ở số 12 nguyễn huệ nha", "output": "bác tài ơi đón tôi ở số 12 nguyễn huệ nha"}
+{"input": "có thể dừng tạm 5 phút để tôi mua thuốc ko", "output": "có thể dừng tạm 5 phút để tôi mua thuốc không"}
+{"input": "đi chợ bến thành hết bảo nhiêu tiền vậy", "output": "đi chợ bến thành hết bao nhiêu tiền vậy"}
+{"input": "tôi muốn tố cáo tài xế chửi bậy với khách", "output": "tôi muốn tố cáo tài xế chửi bậy với khách"}
+{"input": "xe có wifi khong tôi cần làm việc trên đường", "output": "xe có wifi không tôi cần làm việc trên đường"}
+{"input": "chương trình tich điểm đổi quà đang chạy ko", "output": "chương trình tích điểm đổi quà đang chạy không"}
+{"input": "bạn sử lý giúp tôi vụ tăng giá bất hợp lý", "output": "bạn xử lý giúp tôi vụ tăng giá bất hợp lý"}
+{"input": "tôi bị tài xế hủy chuyến đột suất rồi", "output": "tôi bị tài xế hủy chuyến đột xuất rồi"}
+{"input": "công ty bên mình có dịch vụ xe nâng ko", "output": "công ty bên mình có dịch vụ xe nâng không"}
+{"input": "đổi điểm thưởng sang voucher ăn uống sao", "output": "đổi điểm thưởng sang voucher ăn uống sao"}
+{"input": "tôi cần xe chở hàng hóa cồng kềnh chút", "output": "tôi cần xe chở hàng hóa cồng kềnh chút"}
+{"input": "tại sao chưa có xe nào nhận cuốc của tôi", "output": "tại sao chưa có xe nào nhận cuốc của tôi"}
+{"input": "bạn tài vứa gọi tôi nhưng tôi không nghe rõ", "output": "bác tài vừa gọi tôi nhưng tôi không nghe rõ"}
+{"input": "tôi muốn đăng ký thành tài xế cho bên mình", "output": "tôi muốn đăng ký thành tài xế cho bên mình"}
+{"input": "sao app báo đang tìm xe hoài vậy trời ơi", "output": "sao app báo đang tìm xe hoài vậy trời ơi"}
+{"input": "tôi bị tính thiếu km trong chuyến đi rồi", "output": "tôi bị tính thiếu km trong chuyến đi rồi"}
+{"input": "bạn tài đi đường vòng để kiếm thêm tiền à", "output": "bác tài đi đường vòng để kiếm thêm tiền à"}
+{"input": "có thể đón thêm người ở lăng cha cả được ko", "output": "có thể đón thêm người ở lăng cha cả được không"}
+{"input": "xe 7 chỗ ngồi giá cả thế nào vậy bên mình", "output": "xe 7 chỗ ngồi giá cả thế nào vậy bên mình"}
+{"input": "tôi muốn khiếu nại dịch vụ chậm trễ quá", "output": "tôi muốn khiếu nại dịch vụ chậm trễ quá"}
+{"input": "tài xế không chịu bật điều hòa nóng quá", "output": "tài xế không chịu bật điều hòa nóng quá"}
+{"input": "thời gian chờ tính phí sau bảo lâu vậy", "output": "thời gian chờ tính phí sau bao lâu vậy"}
+{"input": "tôi cần xe có ghế an toàn cho trẻ em gấp", "output": "tôi cần xe có ghế an toàn cho trẻ em gấp"}
+{"input": "phương thức thanh toán momo có dùng được ko", "output": "phương thức thanh toán momo có dùng được không"}
+{"input": "bạn tài đánh rơi ví của tôi trong xe rồi", "output": "bác tài đánh rơi ví của tôi trong xe rồi"}
+{"input": "sao tôi không đặt xe qua điện thoại được", "output": "sao tôi không đặt xe qua điện thoại được"}
+{"input": "có thể yêu cầu tài xế nữ không tôi ngại", "output": "có thể yêu cầu tài xế nữ không tôi ngại"}
+{"input": "tôi muốn báo cáo xe có mùi thuốc lá nặng", "output": "tôi muốn báo cáo xe có mùi thuốc lá nặng"}
+{"input": "chính sách hoàn tiền khi huy chuyến thế nào", "output": "chính sách hoàn tiền khi hủy chuyến thế nào"}
+{"input": "bạn tài cố tình không bật đồng hồ định mức", "output": "bác tài cố tình không bật đồng hồ định mức"}
+{"input": "tôi bị tính nhầm phí cầu phà mất rồi", "output": "tôi bị tính nhầm phí cầu phà mất rồi"}
+{"input": "có xe nào chở thú cưng được không bạn", "output": "có xe nào chở thú cưng được không bạn"}
+{"input": "tài khoản của tôi bị trừ tiền oan mất rồi", "output": "tài khoản của tôi bị trừ tiền oan mất rồi"}
+{"input": "sao mã giảm giá không áp zụng được vậy", "output": "sao mã giảm giá không áp dụng được vậy"}
+{"input": "công ty có chế độ bảo hiểm cho khách ko", "output": "công ty có chế độ bảo hiểm cho khách không"}
+{"input": "tôi muốn thay đổi điểm đến thành nhà thờ lớn", "output": "tôi muốn thay đổi điểm đến thành nhà thờ lớn"}
+{"input": "tôi bị tài xế bắt chẹt giá gấp đôi", "output": "tôi bị tài xế bắt chẹt giá gấp đôi"}
+{"input": "ứng zụng báo không tìm thấy địa chỉ đi", "output": "ứng dụng báo không tìm thấy địa chỉ đi"}
+{"input": "có thể ghép chuyến để giảm fí không bạn", "output": "có thể ghép chuyến để giảm phí không bạn"}
+{"input": "xe tới trễ làm tôi lỡ chuyến bay rùi", "output": "xe tới trễ làm tôi lỡ chuyến bay rồi"}
+{"input": "bạn tài quên bật đồng hồ tính tiền kìa", "output": "bác tài quên bật đồng hồ tính tiền kìa"}
+{"input": "tôi cần thanh toán mặttại nhà ga t2", "output": "tôi cần thanh toán mặt tại nhà ga t2"}
+{"input": "chương trình khuyến mại hết hạn từ bao zờ", "output": "chương trình khuyến mại hết hạn từ bao giờ"}
+{"input": "xe đời mới có camera hành trình không á", "output": "xe đời mới có camera hành trình không à"}
+{"input": "tôi muốn đổi sang xe sang hơn với fí bảo nhiêu", "output": "tôi muốn đổi sang xe sang hơn với phí bao nhiêu"}
+{"input": "báo cáo tài xế có thái độ không thân thiện", "output": "báo cáo tài xế có thái độ không thân thiện"}
+{"input": "có xe nào chở được xe lăn điện không ạ", "output": "có xe nào chở được xe lăn điện không ạ"}
+{"input": "ứng zụng bị treo khi đang chọn điểm đón", "output": "ứng dụng bị treo khi đang chọn điểm đón"}
+{"input": "tài xế vứa nhắn tin bảo sẽ trễ 10 fút", "output": "tài xế vừa nhắn tin bảo sẽ trễ 10 phút"}
+{"input": "fương tiện nào rẻ nhất đi quận 7 giờ cao điểm", "output": "phương tiện nào rẻ nhất đi quận 7 giờ cao điểm"}
+{"input": "tôi bị tính thiếu 2km trong chuyến đi rùi", "output": "tôi bị tính thiếu 2km trong chuyến đi rồi"}
+{"input": "cho hỏi giờ chót hủy xe là bao lâu trước", "output": "cho hỏi giờ chót hủy xe là bao lâu trước"}
+{"input": "xe có chỗ để vali cỡ lớn không bác tài", "output": "xe có chỗ để vali cỡ lớn không bác tài"}
+{"input": "tôi muốn khen tài xế lái xe an toàn tuyệt đối", "output": "tôi muốn khen tài xế lái xe an toàn tuyệt đối"}
+{"input": "công ty xử lý khiếu nại trong bảo lâu", "output": "công ty xử lý khiếu nại trong bao lâu"}
+{"input": "tôi bị trừ zụng vụ nhưng không đi xe", "output": "tôi bị trừ dụng vụ nhưng không đi xe"}
+{"input": "bạn tài chở giúp tới bưu điện gần nhất", "output": "bác tài chở giúp tới bưu điện gần nhất"}
+{"input": "tại sạo fải trả thêm fí cầu đường dzậy", "output": "tại sao phải trả thêm phí cầu đường vậy"}
+{"input": "xe hôm qua bẩn quá tôi không hài lòng", "output": "xe hôm qua bẩn quá tôi không hài lòng"}
+{"input": "có thể đổi điểm lấy voucher tắp hóa không", "output": "có thể đổi điểm lấy voucher tạp hóa không"}
+{"input": "tài xế đi lạc đường làm tôi trễ hẹn", "output": "tài xế đi lạc đường làm tôi trễ hẹn"}
+{"input": "ứng zụng báo lỗi khi thêm điểm dừng chân", "output": "ứng dụng báo lỗi khi thêm điểm dừng chân"}
+{"input": "tôi cần xe 16 chỗ cho đoàn du lịch sắp tới", "output": "tôi cần xe 16 chỗ cho đoàn du lịch sắp tới"}
+{"input": "bạn tài ơi dúp tôi mở cốp xe với", "output": "bác tài ơi giúp tôi mở cốp xe với"}
+{"input": "cước fí từ sân bay về trung tâm bao nhêu", "output": "cước phí từ sân bay về trung tâm bao nhiêu"}
+{"input": "tôi muốn đặt xe định kỳ hàng tuần có giảm ko", "output": "tôi muốn đặt xe định kỳ hàng tuần có giảm không"}
+{"input": "xe có cục sạc dự fòng không tôi sắp hết pin", "output": "xe có cục sạc dự phòng không tôi sắp hết pin"}
+{"input": "bạn tài vừa chở tôi quên ví trên xe rồi", "output": "bác tài vừa chở tôi quên ví trên xe rồi"}
+{"input": "tôi cần fản hồi về đơn khiếu nại gấp", "output": "tôi cần phản hồi về đơn khiếu nại gấp"}
+{"input": "chính sách khoá tài khoản khi nào vậy bên mình", "output": "chính sách khóa tài khoản khi nào vậy bên mình"}
+{"input": "tài xế không chịu dừng lại khi tôi yêu cầu", "output": "tài xế không chịu dừng lại khi tôi yêu cầu"}
+{"input": "có thể đặt xe qua tổng đài không hay chỉ app", "output": "có thể đặt xe qua tổng đài không hay chỉ app"}
+{"input": "bạn tài bật nhạc oang quá tôi nhức đầu", "output": "bác tài bật nhạc oang quá tôi nhức đầu"}
+{"input": "tôi bị tính nhầm fí cầu phà 50k mất rồi", "output": "tôi bị tính nhầm phí cầu phà 50k mất rồi"}
+{"input": "công ty có chính sách bồi thường khi mất đồ ko", "output": "công ty có chính sách bồi thường khi mất đồ không"}
+{"input": "xe có kết nối bluetooth để nghe nhạc không", "output": "xe có kết nối bluetooth để nghe nhạc không"}
+{"input": "tôi muốn tố cáo hành vi lái xe lạng lách", "output": "tôi muốn tố cáo hành vi lái xe lạng lách"}
+{"input": "bạn tài vừa đón nhầm người khác rồi", "output": "bác tài vừa đón nhầm người khác rồi"}
+{"input": "tại sao fải trả thêm 10% fí giờ cao điểm", "output": "tại sao phải trả thêm 10% phí giờ cao điểm"}
+{"input": "tôi cần xuất hóa đơn đỏ cho công ty", "output": "tôi cần xuất hóa đơn đỏ cho công ty"}
+{"input": "có thể yêu cầu tài xế không hút thuốc không", "output": "có thể yêu cầu tài xế không hút thuốc không"}
+{"input": "bạn tài chở quá tốc độ tôi sợ quá", "output": "bác tài chở quá tốc độ tôi sợ quá"}
+{"input": "tôi muốn xem lại lịch sử chuyến đi tháng 3", "output": "tôi muốn xem lại lịch sử chuyến đi tháng 3"}
+{"input": "tôi cần đạt xe ra phi trường gấp", "output": "tôi cần đặt xe ra phi trường gấp"}
+{"input": "bạn tài dúp tôi với hành lý cồng kềnh", "output": "bác tài giúp tôi với hành lý cồng kềnh"}
+{"input": "ứng zụng báo đã tìm thấy tài xế rồi", "output": "ứng dụng báo đã tìm thấy tài xế rồi"}
+{"input": "xe có chổ ngồi thoải mái cho người già", "output": "xe có chỗ ngồi thoải mái cho người già"}
+{"input": "tài xế vừa nhắn sẽ đón trễ 10 fút", "output": "tài xế vừa nhắn sẽ đón trễ 10 phút"}
+{"input": "cước fí từ đây tới sân bay bao nhỉu", "output": "cước phí từ đây tới sân bay bao nhiêu"}
+{"input": "bạn tài quên bật máy lạnh nóng quá", "output": "bác tài quên bật máy lạnh nóng quá"}
+{"input": "tôi cần thanh toán mặttại trạm xăng", "output": "tôi cần thanh toán mặt tại trạm xăng"}
+{"input": "xe đời mới có ghế massage hả bác", "output": "xe đời mới có ghế massage hả bác"}
+{"input": "chương trình tich điểm hết hạn rùi", "output": "chương trình tích điểm hết hạn rồi"}
+{"input": "tài xế đánh võng làm tôi say xe", "output": "tài xế đánh võng làm tôi say xe"}
+{"input": "bạn tài ơi dừng tạm tiệm thuốc tây", "output": "bác tài ơi dừng tạm tiệm thuốc tây"}
+{"input": "tôi bị mất điện thoại trên xe rùi", "output": "tôi bị mất điện thoại trên xe rồi"}
+{"input": "có thể đổi sang xe lớn hơn được hem", "output": "có thể đổi sang xe lớn hơn được không"}
+{"input": "tài khoản bị trừ tiền oan mất rồi", "output": "tài khoản bị trừ tiền oan mất rồi"}
+{"input": "bạn tài chở qua ngân hàng trước nha", "output": "bác tài chở qua ngân hàng trước nha"}
+{"input": "xe hôm qua sạch sẽ tôi rất hài lòng", "output": "xe hôm qua sạch sẽ tôi rất hài lòng"}
+{"input": "tôi muốn khen tài xế thân thiện quá", "output": "tôi muốn khen tài xế thân thiện quá"}
+{"input": "có thể thêm điểm dừng ở chợ bến thành", "output": "có thể thêm điểm dừng ở chợ bến thành"}
+{"input": "bạn tài vừa bỏ quên kính râm trên xe", "output": "bác tài vừa bỏ quên kính râm trên xe"}
+{"input": "tôi cần fản hồi gấp về đơn kiện", "output": "tôi cần phản hồi gấp về đơn kiện"}
+{"input": "chính sách đổi xe giữa chuyến thế nào", "output": "chính sách đổi xe giữa chuyến thế nào"}
+{"input": "tài xế bật nhạc du dương tôi thích", "output": "tài xế bật nhạc du dương tôi thích"}
+{"input": "ứng zụng bị lỗi khi nhập điểm đến", "output": "ứng dụng bị lỗi khi nhập điểm đến"}
+{"input": "bạn tài lái êm quá tôi ngủ suốt", "output": "bác tài lái êm quá tôi ngủ suốt"}
+{"input": "ứng zụng báo lỗi khi thanh toán momo", "output": "ứng dụng báo lỗi khi thanh toán momo"}
+{"input": "cần hủy chuyến đã đặt cách đây 2 fút", "output": "cần hủy chuyến đã đặt cách đây 2 phút"}
+{"input": "chính sách hoàn tiền khi trễ xe thế nào", "output": "chính sách hoàn tiền khi trễ xe thế nào"}
+{"input": "tài khoản bị khóa bất ngờ cần mở gấp", "output": "tài khoản bị khóa bất ngờ cần mở gấp"}
+{"input": "phiên bản ứng zụng mới có gì khác biệt", "output": "phiên bản ứng dụng mới có gì khác biệt"}
+{"input": "cước fí chuyến đi hiện tại bảo nhiêu", "output": "cước phí chuyến đi hiện tại bao nhiêu"}
+{"input": "hệ thống báo đang tìm xe đã lâu rồi", "output": "hệ thống báo đang tìm xe đã lâu rồi"}
+{"input": "voucher giảm giá áp zụng thất bại", "output": "voucher giảm giá áp dụng thất bại"}
+{"input": "cần đổi phương thức thanh toán sang thẻ", "output": "cần đổi phương thức thanh toán sang thẻ"}
+{"input": "lịch sử chuyến đi tháng trước xem sao", "output": "lịch sử chuyến đi tháng trước xem sao"}
+{"input": "thông báo đặt xe thành côg chưa tới", "output": "thông báo đặt xe thành công chưa tới"}
+{"input": "chương trình tich điểm có hạn dùng ko", "output": "chương trình tích điểm có hạn dùng không"}
+{"input": "báo cáo sự cố mất đồ quên trên xe", "output": "báo cáo sự cố mất đồ quên trên xe"}
+{"input": "fí dịch vụ ban đêm tăng bảo nhiêu %", "output": "phí dịch vụ ban đêm tăng bao nhiêu %"}
+{"input": "đăng ký dịch vụ xe cố định hàng tuần", "output": "đăng ký dịch vụ xe cố định hàng tuần"}
+{"input": "ứng zụng đòi xin quyền truy cập vị trí", "output": "ứng dụng đòi xin quyền truy cập vị trí"}
+{"input": "hóa đơn điện tứ gửi sai email rồi", "output": "hóa đơn điện tử gửi sai email rồi"}
+{"input": "chất lượng dịch vụ gần đây sụt giảm", "output": "chất lượng dịch vụ gần đây sụt giảm"}
+{"input": "tạo tài khoản mới bị lỗi xác thực", "output": "tạo tài khoản mới bị lỗi xác thực"}
+{"input": "khiếu nại chưa được giải quyết 3 ngày", "output": "khiếu nại chưa được giải quyết 3 ngày"}
+{"input": "chế độ bảo hiểm hành khách chi tiết", "output": "chế độ bảo hiểm hành khách chi tiết"}
+{"input": "thời gian chờ tối đa trước khi hủy", "output": "thời gian chờ tối đa trước khi hủy"}
+{"input": "cập nhật địa chỉ thường dùng bị lỗi", "output": "cập nhật địa chỉ thường dùng bị lỗi"}
+{"input": "yêu cầu xe đặc biệt ghi ở đâu trên app", "output": "yêu cầu xe đặc biệt ghi ở đâu trên app"}
+{"input": "xác nhận chuyến đi qua sms bị trễ", "output": "xác nhận chuyến đi qua sms bị trễ"}
+{"input": "ứng zụng bị crash khi mở mục thanh toán", "output": "ứng dụng bị crash khi mở mục thanh toán"}
+{"input": "cập nật thông tin cá nhân bị lỗi verifcation", "output": "cập nhật thông tin cá nhân bị lỗi verification"}
+{"input": "chính sách hoản cước khi xe đến trễ", "output": "chính sách hoàn cước khi xe đến trễ"}
+{"input": "thẻ ngân hàng liên kết bị từ chối", "output": "thẻ ngân hàng liên kết bị từ chối"}
+{"input": "tích lũy điểm thưởng chưa cập nật", "output": "tích lũy điểm thưởng chưa cập nhật"}
+{"input": "hệ thống nhận diện sai địa chỉ nhà tui", "output": "hệ thống nhận diện sai địa chỉ nhà tôi"}
+{"input": "voucher hết hạn sử zụng vẫn hiển thị", "output": "voucher hết hạn sử dụng vẫn hiển thị"}
+{"input": "báo cáo sự cố kỹ thuật mất hơn 24h", "output": "báo cáo sự cố kỹ thuật mất hơn 24h"}
+{"input": "đăng ký dịch vụ xe vip bị pending", "output": "đăng ký dịch vụ xe vip bị pending"}
+{"input": "lịch sử chuyến đi tháng 12 biến mất", "output": "lịch sử chuyến đi tháng 12 biến mất"}
+{"input": "thông báo promotion không đến điện thoại", "output": "thông báo promotion không đến điện thoại"}
+{"input": "xác thực tài khoản qua email bị fail", "output": "xác thực tài khoản qua email bị fail"}
+{"input": "chế độ bảo mật thông tin thẻ yếu", "output": "chế độ bảo mật thông tin thẻ yếu"}
+{"input": "phiên bản cũ không tương thích ios mới", "output": "phiên bản cũ không tương thích ios mới"}
+{"input": "tính năng đặt xe định kỳ bị disable", "output": "tính năng đặt xe định kỳ bị disable"}
+{"input": "yêu cầu rút tiền từ ví điện tứ", "output": "yêu cầu rút tiền từ ví điện tử"}
+{"input": "chính sách data collection cập nật", "output": "chính sách data collection cập nhật"}
+{"input": "giao diện mới khó sử zụng quá", "output": "giao diện mới khó sử dụng quá"}
+{"input": "thông báo nhầm chuyến đi đã hủy", "output": "thông báo nhầm chuyến đi đã hủy"}
+{"input": "liên kết tài khoản google bị lỗi", "output": "liên kết tài khoản google bị lỗi"}
+{"input": "vị trí hiện tại bị sai lệch 300m", "output": "vị trí hiện tại bị sai lệch 300m"}
+{"input": "chế độ dark mode chưa hoạt động", "output": "chế độ dark mode chưa hoạt động"}
+{"input": "thanh toán paypal bị charge thêm fí", "output": "thanh toán paypal bị charge thêm phí"}
+{"input": "nâng cấp tài khoản premium bị fail", "output": "nâng cấp tài khoản premium bị fail"}
+{"input": "thống kê chi tiêu năm nay không đúng", "output": "thống kê chi tiêu năm nay không đúng"}
+{"input": "chô tôi đặt xê từ sân bay về quận 1", "output": "cho tôi đặt xe từ sân bay về quận 1"}
+{"input": "bên mình có xíp hàng hóa kích thước lớn hôn", "output": "bên mình có ship hàng hóa kích thước lớn không"}
+{"input": "tài xế hôm trước lái ẩu quá tui sợ hãi luôn", "output": "tài xế hôm trước lái ẩu quá tôi sợ hãi luôn"}
+{"input": "cần hũy chuyến xe vì đổi lịch gấp", "output": "cần hủy chuyến xe vì đổi lịch gấp"}
+{"input": "khoản cách từ đây tới chợ bến thàn bao xa", "output": "khoảng cách từ đây tới chợ bến thành bao xa"}
+{"input": "tôi bị tình sai cước phí mất 50 ngàn", "output": "tôi bị tính sai cước phí mất 50 ngàn"}
+{"input": "ứng dựng báo lỗi khi nhập điểm đến", "output": "ứng dụng báo lỗi khi nhập điểm đến"}
+{"input": "bác tài ơi dúp tôi dỡ hành lý nặng", "output": "bác tài ơi giúp tôi dỡ hành lý nặng"}
+{"input": "chính sách bồi thường khi mất đồ sao rùi", "output": "chính sách bồi thường khi mất đồ sao rồi"}
+{"input": "tài khỏan của tôi bị khóa bất ngờ", "output": "tài khoản của tôi bị khóa bất ngờ"}
+{"input": "có thễ yêu cầu tài xế nữ không tôi ngại", "output": "có thể yêu cầu tài xế nữ không tôi ngại"}
+{"input": "xe chạy vòng vo làm tôn thêm bao nhiu fí", "output": "xe chạy vòng vo làm tốn thêm bao nhiêu phí"}
+{"input": "bạn tài quên bật điều hành cho mát", "output": "bác tài quên bật điều hòa cho mát"}
+{"input": "tôi cần xin hóa đơn diện tử gấp", "output": "tôi cần xin hóa đơn điện tử gấp"}
+{"input": "chương trình tich điểm đổi quà đang chạy hôn", "output": "chương trình tích điểm đổi quà đang chạy không"}
+{"input": "thời jan chờ tối đa trước khi hủy", "output": "thời gian chờ tối đa trước khi hủy"}
+{"input": "tài xế đón trễ làm tôi lở cuộc hẹn", "output": "tài xế đón trễ làm tôi lỡ cuộc hẹn"}
+{"input": "cần báo cáo xế có mùi hôi khó chụi", "output": "cần báo cáo xe có mùi hôi khó chịu"}
+{"input": "bên mình có xíp tận nhà không chi phí sao", "output": "bên mình có ship tận nhà không chi phí sao"}
+{"input": "tôi bị tình thiếu 3km trong chuyến đi", "output": "tôi bị tính thiếu 3km trong chuyến đi"}
+{"input": "có thễ đặt xe cấp cứu không người nhà bệnh", "output": "có thể đặt xe cấp cứu không người nhà bệnh"}
+{"input": "ứng dựng bị đứng hình khi tìm tài xế", "output": "ứng dụng bị đứng hình khi tìm tài xế"}
+{"input": "bạn tài ơi dừng tạm quán cafe 5 fút", "output": "bác tài ơi dừng tạm quán cafe 5 phút"}
+{"input": "tôi muốn đăng ký dịnh kỳ xe hàng tuần", "output": "tôi muốn đăng ký định kỳ xe hàng tuần"}
+{"input": "hệ thống báo sai giá chuyến đi rồi", "output": "hệ thống báo sai giá chuyến đi rồi"}
+{"input": "chô tui đặt xe ra phi trường sáng mai", "output": "cho tôi đặt xe ra phi trường sáng mai"}
+{"input": "ứng zụng bị lag khi chọn điểm đến", "output": "ứng dụng bị lag khi chọn điểm đến"}
+{"input": "bác tài dúp tôi với mấy thùng hàng nặng", "output": "bác tài giúp tôi với mấy thùng hàng nặng"}
+{"input": "cần hũy chuyến vì đổi kế hoạch gấp", "output": "cần hủy chuyến vì đổi kế hoạch gấp"}
+{"input": "khoản cách tới nhà ga bao xa vậy", "output": "khoảng cách tới nhà ga bao xa vậy"}
+{"input": "tài xế chở thú cưng được hôn bên mình", "output": "tài xế chở thú cưng được không bên mình"}
+{"input": "tính tiền sai mất 20% làm sao đây", "output": "tính tiền sai mất 20% làm sao đây"}
+{"input": "xe hôm qua bốc mùi thuốc lá nặng", "output": "xe hôm qua bốc mùi thuốc lá nặng"}
+{"input": "bạn tài quên rẻ vào trạm xăng rồi", "output": "bác tài quên rẽ vào trạm xăng rồi"}
+{"input": "chờ tôi 3 fút ở cổng số 4 nhé", "output": "chờ tôi 3 phút ở cổng số 4 nhé"}
+{"input": "đặt xe định kỳ có giảm giá hông", "output": "đặt xe định kỳ có giảm giá không"}
+{"input": "tôi bị mất ví trong xe làm sao", "output": "tôi bị mất ví trong xe làm sao"}
+{"input": "chương trình tich điểm sao không thấy", "output": "chương trình tích điểm sao không thấy"}
+{"input": "bên mình có xíp đồ ăn không nhỉ", "output": "bên mình có ship đồ ăn không nhỉ"}
+{"input": "thời jan di chuyển ước chừng bao lâu", "output": "thời gian di chuyển ước chừng bao lâu"}
+{"input": "tài xế đi lộn đường làm trễ 20p", "output": "tài xế đi lộn đường làm trễ 20p"}
+{"input": "cần xe có ghế an toàn cho trẻ con", "output": "cần xe có ghế an toàn cho trẻ con"}
+{"input": "ứng dựng treo khi thanh toán xong", "output": "ứng dụng treo khi thanh toán xong"}
+{"input": "báo giá chuyến đi quận 7 giá sao", "output": "báo giá chuyến đi quận 7 giá sao"}
+{"input": "tôi muốn tố cáo tài xế chửi thề", "output": "tôi muốn tố cáo tài xế chửi thề"}
+{"input": "có thể dừng tạm nhà thuốc được hôn", "output": "có thể dừng tạm nhà thuốc được không"}
+{"input": "xe bị hư điều hòa nóng chảy mỡ", "output": "xe bị hư điều hòa nóng chảy mỡ"}
+{"input": "bạn tài ơi mở dùm cốp xe cái", "output": "bác tài ơi mở dùm cốp xe cái"}
+{"input": "hệ thống báo đã tìm thấy xe chưa", "output": "hệ thống báo đã tìm thấy xe chưa"}
+{"input": "tôi cần đổi điểm lấy voucher mua sắm", "output": "tôi cần đổi điểm lấy voucher mua sắm"}
+{"input": "phí cầu đường bị tính nhầm rồi", "output": "phí cầu đường bị tính nhầm rồi"}
+{"input": "chờ quá 10 fút có bị tính phí hôn", "output": "chờ quá 10 phút có bị tính phí không"}
+{"input": "tài xế đánh võng làm say xe quá", "output": "tài xế đánh võng làm say xe quá"}
+{"input": "đăng ký tài xế mới cần giấy tờ gì", "output": "đăng ký tài xế mới cần giấy tờ gì"}
+{"input": "báo cáo lái xe vượt đèn đỏ dùm", "output": "báo cáo lái xe vượt đèn đỏ dùm"}
+{"input": "có thể đón thêm người dọc đường hôn", "output": "có thể đón thêm người dọc đường không"}
+{"input": "xe 16 chỗ giá cả thế nào báo tui", "output": "xe 16 chỗ giá cả thế nào báo tôi"}
+{"input": "tôi bị tài xế hủy chuyến đột xuất", "output": "tôi bị tài xế hủy chuyến đột xuất"}
+{"input": "cần xuất hóa đơn đỏ cho công ty", "output": "cần xuất hóa đơn đỏ cho công ty"}
+{"input": "chất lượng dịch vụ sao dạo này tệ", "output": "chất lượng dịch vụ sao dạo này tệ"}
+{"input": "tài khoản bị trừ tiền oan rồi", "output": "tài khoản bị trừ tiền oan rồi"}
+{"input": "bạn tài chạy quá tốc độ sợ quá", "output": "bác tài chạy quá tốc độ sợ quá"}
+{"input": "thống kê chi tiêu sai bét rồi", "output": "thống kê chi tiêu sai bét rồi"}
+{"input": "có thể yêu cầu xe đời mới hôn", "output": "có thể yêu cầu xe đời mới không"}
+{"input": "tôi muốn khiếu nại dịch vụ chậm trễ", "output": "tôi muốn khiếu nại dịch vụ chậm trễ"}
+{"input": "bên mình có hổ trợ người khuyết tật", "output": "bên mình có hỗ trợ người khuyết tật"}
+{"input": "tài xế không thèm chào hỏi khách", "output": "tài xế không thèm chào hỏi khách"}
+{"input": "cước phí ban đêm tăng bảo nhiêu", "output": "cước phí ban đêm tăng bao nhiêu"}
+{"input": "đặt xe qua tổng đài được hôn hay app", "output": "đặt xe qua tổng đài được không hay app"}
+{"input": "cần xe chở hàng hóa dễ vở cẩn thận", "output": "cần xe chở hàng hóa dễ vỡ cẩn thận"}
+{"input": "bạn tài vừa đón nhầm người khác", "output": "bác tài vừa đón nhầm người khác"}
+{"input": "thời gian chờ tối đa bao lâu vậy", "output": "thời gian chờ tối đa bao lâu vậy"}
+{"input": "tôi cần gặp quản lý để phản ảnh", "output": "tôi cần gặp quản lý để phản ánh"}
+{"input": "chế độ bảo hiểm cho khách thế nào", "output": "chế độ bảo hiểm cho khách thế nào"}
+{"input": "báo giá sai làm tôi bực mình quá", "output": "báo giá sai làm tôi bực mình quá"}
+{"input": "công ty xử lý khiếu nại mấy ngày", "output": "công ty xử lý khiếu nại mấy ngày"}
+{"input": "tài xế nữ có nhiều hôn bên mình", "output": "tài xế nữ có nhiều không bên mình"}
+{"input": "chô tui hủy đặt xê vừa rồi gấp", "output": "cho tôi hủy đặt xe vừa rồi gấp"}
+{"input": "bô fí từ sân bay về q1 bảo nhìu", "output": "báo phí từ sân bay về q1 bao nhiêu"}
+{"input": "tạ s k áp zụng đc mã khyến mãi", "output": "tại sao không áp dụng được mã khuyến mãi"}
+{"input": "cách xem lịk sử chuyến đi trước", "output": "cách xem lịch sử chuyến đi trước"}
+{"input": "ứng zụng báo lỗ kết nối ngân hàng", "output": "ứng dụng báo lỗi kết nối ngân hàng"}
+{"input": "tôy k nhận đc thôg báo xế đến", "output": "tôi không nhận được thông báo xe đến"}
+{"input": "cập nật số đt liên hệ ở mục nà", "output": "cập nhật số điện thoại liên hệ ở mục nào"}
+{"input": "ví momo k thanh toán đc rồi", "output": "ví momo không thanh toán được rồi"}
+{"input": "hủy gó địn kỳ sao vẫn bị trừ fí", "output": "hủy gói định kỳ sao vẫn bị trừ phí"}
+{"input": "có đc hoàn cước k khi hũy sớm", "output": "có được hoàn cước không khi hủy sớm"}
+{"input": "chat bot ơi sao k tìm thấy địa chỉ", "output": "chatbot ơi sao không tìm thấy địa chỉ"}
+{"input": "thời jan xử lý khyến nại mấy ngày", "output": "thời gian xử lý khiếu nại mấy ngày"}
+{"input": "cách đổi fương thức thanh tóan", "output": "cách đổi phương thức thanh toán"}
+{"input": "tạo sao bị trừ tiền 2 lần cùg chuyến", "output": "tại sao bị trừ tiền 2 lần cùng chuyến"}
+{"input": "báo tui cách lấy lại mật khẩu", "output": "báo tôi cách lấy lại mật khẩu"}
+{"input": "ứng zụng đơ kh chọn điể đón", "output": "ứng dụng đơ khi chọn điểm đón"}
+{"input": "chương trìn tich điểm sao k hoạt đông", "output": "chương trình tích điểm sao không hoạt động"}
+{"input": "cần hõ trợ gấp vụ trừ tiền oan", "output": "cần hỗ trợ gấp vụ trừ tiền oan"}
+{"input": "mã otp k gửi về sms làm sao", "output": "mã OTP không gửi về SMS làm sao"}
+{"input": "có thễ yê cầu xế riêg k bot", "output": "có thể yêu cầu xe riêng không bot"}
+{"input": "hướg dẩn sịd voucher bước nà", "output": "hướng dẫn sử dụng voucher bước nào"}
+{"input": "tôi mún tố cá sự cố nhưg k phải tài xế", "output": "tôi muốn tố cáo sự cố nhưng không phải tài xế"}
+{"input": "ví điện tứ k liên kết đc với app", "output": "ví điện tử không liên kết được với app"}
+{"input": "cách xem chi tiết fụ fí sau trip", "output": "cách xem chi tiết phụ phí sau trip"}
+{"input": "tạ s k đặt xe qa web đc", "output": "tại sao không đặt xe qua web được"}
+{"input": "chô tôi đặt xê từ trung tâm ra sân bay", "output": "cho tôi đặt xe từ trung tâm ra sân bay"}
+{"input": "bô fí chuyến đi nà báo sao tron app", "output": "báo phí chuyến đi này sao trong app"}
+{"input": "tại s mã khyến mại k áp zụng đc", "output": "tại sao mã khuyến mãi không áp dụng được"}
+{"input": "cách hũy đặt xê đã xác nhận rùi", "output": "cách hủy đặt xe đã xác nhận rồi"}
+{"input": "tôi k thấy lịc sử chuyến đi đâu cả", "output": "tôi không thấy lịch sử chuyến đi đâu cả"}
+{"input": "ứng zụng báo lỗi khi nạp tiền vô vị", "output": "ứng dụng báo lỗi khi nạp tiền vào ví"}
+{"input": "cập nật điểm đón mới ở đâu vậy bot", "output": "cập nhật điểm đón mới ở đâu vậy bot"}
+{"input": "tại s tài kỏan bị khóa bất ngờ", "output": "tại sao tài khoản bị khóa bất ngờ"}
+{"input": "báo tui thời jan xe đến dự kiến", "output": "báo tôi thời gian xe đến dự kiến"}
+{"input": "có đc đổi fương tiện gữa chuyến k", "output": "có được đổi phương tiện giữa chuyến không"}
+{"input": "hướng dẩn sịt mã giảm giá bước nào", "output": "hướng dẫn sử dụng mã giảm giá bước nào"}
+{"input": "tôi mún tố cáo lái xe nhưng k phải tài xế", "output": "tôi muốn tố cáo lái xe nhưng không phải tài xế"}
+{"input": "ví momo k kết nối đc với app", "output": "ví momo không kết nối được với app"}
+{"input": "cách xem chi tiết cước fí sau chuyến", "output": "cách xem chi tiết cước phí sau chuyến"}
+{"input": "tạo sao k đặt xe qa website đc", "output": "tại sao không đặt xe qua website được"}
+{"input": "chô hủy chuyến đã thanh toán trước", "output": "cho hủy chuyến đã thanh toán trước"}
+{"input": "thời jan chờ tối đa bao lâu v bot", "output": "thời gian chờ tối đa bao lâu v bot"}
+{"input": "ứng zụng k nhận diện đc vị trí hiện tạ", "output": "ứng dụng không nhận diện được vị trí hiện tại"}
+{"input": "cần hõ trợ gấp về vấn đề hoàn cước", "output": "cần hỗ trợ gấp về vấn đề hoàn cước"}
+{"input": "chương trìn tịch điểm đổi qùa sao k thấy", "output": "chương trình tích điểm đổi quà sao không thấy"}
+{"input": "báo cá sự cố thanh toán 2 lần", "output": "báo cáo sự cố thanh toán 2 lần"}
+{"input": "có đc chọn loạ xe theo ý mún k", "output": "có được chọn loại xe theo ý muốn không"}
+{"input": "tôi k nhận đc mã otp xát nhận", "output": "tôi không nhận được mã OTP xác nhận"}
+{"input": "cách đăng ký gói cước địn kỳ", "output": "cách đăng ký gói cước định kỳ"}
+{"input": "hũy dịch vụ vip nhữg vẫn bị trừ fí", "output": "hủy dịch vụ VIP những vẫn bị trừ phí"}
+{"input": "cho hởi cách đổi mật khẩu tròn app", "output": "cho hỏi cách đổi mật khẩu trong app"}
+{"input": "tôi k vào được tài khản bị sao", "output": "tôi không vào được tài khoản bị sao"}
+{"input": "chat bot ơi chỉ tui cách tịch điểm", "output": "chatbot ơi chỉ tôi cách tích điểm"}
+{"input": "mã giảm giá hết hạn sịt zụng rồi", "output": "mã giảm giá hết hạn sử dụng rồi"}
+{"input": "tại s k nhận được mã xát thực", "output": "tại sao không nhận được mã xác thực"}
+{"input": "báo tui lịc sử thanh toán tháng 3", "output": "báo tôi lịch sử thanh toán tháng 3"}
+{"input": "cách lấy lại tài khản quên mật khẩu", "output": "cách lấy lại tài khoản quên mật khẩu"}
+{"input": "ứng zụng báo lổi khi nạp tiền vô", "output": "ứng dụng báo lỗi khi nạp tiền vào"}
+{"input": "chương trìn khuyến mãi còn hạn k", "output": "chương trình khuyến mãi còn hạn không"}
+{"input": "tôi mún hủy gói cước trả trước", "output": "tôi muốn hủy gói cước trả trước"}
+{"input": "chat bot ơi sao k tìm thấy voucher", "output": "chatbot ơi sao không tìm thấy voucher"}
+{"input": "cập nật thông tin cá nhân ở đâu", "output": "cập nhật thông tin cá nhân ở đâu"}
+{"input": "tại s bị trừ tiền oan nhiều lần", "output": "tại sao bị trừ tiền oan nhiều lần"}
+{"input": "hướng dẩn đăng ký dịch vụ mới", "output": "hướng dẫn đăng ký dịch vụ mới"}
+{"input": "thời jan xử lý khiếu nại bao lâu", "output": "thời gian xử lý khiếu nại bao lâu"}
+{"input": "cách chuyển đổi quà từ điểm thưởng", "output": "cách chuyển đổi quà từ điểm thưởng"}
+{"input": "tôi k thấy nút hủy dịch vụ đâu", "output": "tôi không thấy nút hủy dịch vụ đâu"}
+{"input": "chat bot báo lổi hệ thống liên tục", "output": "chatbot báo lỗi hệ thống liên tục"}
+{"input": "ứng zụng đơ khi chọn thanh toán", "output": "ứng dụng đơ khi chọn thanh toán"}
+{"input": "có được đổi số điện thại liên hệ", "output": "có được đổi số điện thoại liên hệ"}
+{"input": "báo tui cách tắt thông báo quảng cáo", "output": "báo tôi cách tắt thông báo quảng cáo"}
+{"input": "mất bao lâu để xát minh tài khản", "output": "mất bao lâu để xác minh tài khoản"}
+{"input": "chính sách bảo mật thông tin thế nào", "output": "chính sách bảo mật thông tin thế nào"}
+{"input": "cách khắc phục lỗi đăng nhập lập lại", "output": "cách khắc phục lỗi đăng nhập lặp lại"}
+{"input": "tôi cần hõ trợ về vấn đề ví điện tử", "output": "tôi cần hỗ trợ về vấn đề ví điện tử"}
+{"input": "cho tui đặt xê ra sân bay sáng mai", "output": "cho tôi đặt xe ra sân bay sáng mai"}
+{"input": "ứng zụng báo lỗi khi chọ điểm đến", "output": "ứng dụng báo lỗi khi chọn điểm đến"}
+{"input": "bác tây dúp tui dở hành lý nặng", "output": "bác tài giúp tôi dỡ hành lý nặng"}
+{"input": "cần hũy chuyến vì bận vc đột suất", "output": "cần hủy chuyến vì bận việc đột xuất"}
+{"input": "khoản cán từ đây tới chợ bao xạ", "output": "khoảng cách từ đây tới chợ bao xa"}
+{"input": "tài xế không chịu bật điều hành", "output": "tài xế không chịu bật điều hòa"}
+{"input": "xe có mùi thuốc lá nặg quá", "output": "xe có mùi thuốc lá nặng quá"}
+{"input": "bạn tài quên rẻ vào trạm xăng", "output": "bác tài quên rẽ vào trạm xăng"}
+{"input": "chờ tui 3 phúc ở cổng số 2", "output": "chờ tôi 3 phút ở cổng số 2"}
+{"input": "đặt xê định kỳ có giảm giá hôn", "output": "đặt xe định kỳ có giảm giá không"}
+{"input": "tui bị để quên túi xác trên xe", "output": "tôi bị để quên túi xách trên xe"}
+{"input": "tích điểm đổi quà đang bả trì", "output": "tích điểm đổi quà đang bảo trì"}
+{"input": "bên mình có xịp đồ ăn không", "output": "bên mình có ship đồ ăn không"}
+{"input": "thời jan chờ xe đã 15 phúc", "output": "thời gian chờ xe đã 15 phút"}
+{"input": "tài xế đi lộn đường tốn xăng", "output": "tài xế đi lộn đường tốn xăng"}
+{"input": "cần xê có ghế an toàn cho bé", "output": "cần xe có ghế an toàn cho bé"}
+{"input": "ứng dựng không tải được bản đồ", "output": "ứng dụng không tải được bản đồ"}
+{"input": "báo gía đi quận 1 hết bao nhìu", "output": "báo giá đi quận 1 hết bao nhiêu"}
+{"input": "tôi mún tố cáo tài xế lái ẩu", "output": "tôi muốn tố cáo tài xế lái ẩu"}
+{"input": "dừng tạm quán nước 5 phúc được hôn", "output": "dừng tạm quán nước 5 phút được không"}
+{"input": "xe không có túi non cho em bé", "output": "xe không có túi nôn cho em bé"}
+{"input": "hệ thống báo tìm xê mãi không được", "output": "hệ thống báo tìm xe mãi không được"}
+{"input": "cước phí bị tính hai lần rùi", "output": "cước phí bị tính hai lần rồi"}
+{"input": "tài xế vượt ẩu suýt tai nạn", "output": "tài xế vượt ẩu suýt tai nạn"}
+{"input": "đăng ký tài khỏan mới bị lỗi", "output": "đăng ký tài khoản mới bị lỗi"}
+
